@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", sans-serif
+}
+#root{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(to top,rgba(0, 0, 0, 0.338),rgba(0, 0, 0, 0.047)), url(./assets/bg.jpg);
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pass-generator{
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter:blur(2px);
+}
+.pass-generator h2{
+  color:#fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.input{
+  margin-top: 20px;
+}
+.input input{
+  width: 100%;
+  height:40px;
+  padding: 0 10px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: transparent;
+  border: 2px solid #ffffff44;
+  color: #fff;
+}
+.input input:focus{
+  border: 2px solid #fff;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.input label{
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 5px;
+}
+.options{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.option input{
+  height: 16px;
+  width:30px ;
+}
+.option label{
+   color: #fff;
+   font-size: 1rem;
+}
+.result{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+.result input{
+  flex-grow: 1;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  
+ 
+}
+.result button{
+  border: none;
+  width: 50px;
+}
+.copyright p{
+  color: #ffffff5a;
+}
+a{
+  color: #fff;
+}
+.copyright{
+  text-align: center;
+  margin-top: 40px;
+}
+.btn-container{
+  height: 40px;
+  width: 150px;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  margin:10px 0;
+  overflow: hidden;
+  border-radius: 40px;
+
+}
+
+.gp{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 145px;
+  height: 35px;
+  border: none;
+  background-color: #fff;
+  border-radius: 35px;
+}
+.border{
+  height: 50px;
+  width: 150px;
+  margin-top: 5px;
+  background: linear-gradient(to left,rgb(255, 0, 119),rgb(0, 30, 255));
+  animation: rotate 2s ease-in-out infinite ;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
